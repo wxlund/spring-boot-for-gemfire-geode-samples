@@ -1,5 +1,8 @@
 applications:
 - name: spring-tips-pcc
   buildpack: java_buildpack_offline
+  path: target/spring-boot-for-gemfire-geode-samples-1.0-SNAPSHOT.jar
+  health-check-type: process
   services:
   - spring-tips-pcc
+  - service-registry

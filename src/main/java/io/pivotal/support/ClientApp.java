@@ -6,6 +6,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.gemfire.config.annotation.EnableEntityDefinedRegions;
 import org.springframework.data.gemfire.config.annotation.EnablePdx;
@@ -16,6 +17,7 @@ import org.springframework.data.gemfire.repository.config.EnableGemfireRepositor
 @EnableGemfireRepositories
 @EnableEntityDefinedRegions
 @EnablePdx
+@EnableDiscoveryClient
 @SpringBootApplication
 public class ClientApp {
 
